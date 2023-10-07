@@ -26,7 +26,7 @@ export default MainScreen1 = function(){
 
     const highlightedItem = fll2.find(item => item.isHighlighted);
         if (highlightedItem) {
-        highlightedItem.height = 600; // Đặt kích thước lớn hơn
+        highlightedItem.height = 600;
         }
 
     return(
@@ -47,7 +47,7 @@ export default MainScreen1 = function(){
             <View style={{width:'100%', height:'15%'}}>
                 <FlatList
                     data={data}
-                    horizontal={true} // Đặt horizontal thành true để tạo danh sách lướt ngang
+                    horizontal={true} 
                     showsHorizontalScrollIndicator={false}
                     renderItem={({ item }) => (
                         <TouchableOpacity style={{ width: 200, height: 100, margin: 10, justifyContent: 'center', alignItems: 'center', }}>
@@ -64,7 +64,7 @@ export default MainScreen1 = function(){
                 <FlatList
                     data={fll2}
                     horizontal={true}
-                    pagingEnabled // Đặt horizontal thành true để tạo danh sách lướt ngang
+                    pagingEnabled 
                     showsHorizontalScrollIndicator={false}
                     renderItem={({ item, index }) => (
                         <TouchableOpacity style={{ width: 380, height: item.height || 300, shadowColor: 'black', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.5, shadowRadius: 4, justifyContent:'center', alignItems:'center'}}>
